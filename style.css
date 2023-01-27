@@ -1,0 +1,171 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+body{
+    height:100vh;
+}
+.accueil{
+    background-image: url(jungle.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: left;
+
+}
+.accueilF{
+    background-image: url(formulaire.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+
+}
+
+/*Apparition*/
+#font{
+    font-family: 'Alegreya Sans SC', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Syne Tactile', cursive;
+    font-size: 6em;
+    font-weight: bolder;
+}
+h1{
+    
+   animation: apparition 0.8s ease-out; 
+}
+@keyframes apparition{
+    from{
+        opacity: 0;
+        transform: translateY(-400px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+
+.taille_logo{
+    width:50%;
+}
+.marge{
+    margin-top:2%;
+}
+.carousel-item img{
+    width:100%;
+    height: auto;
+}
+
+/*a changer*/
+.police{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+/*Page feu de camp-Parallax*/
+#top{
+    height: 400px;
+    width: 100%;
+    background-color: #fa8d40 ;
+
+}
+#para1{
+    background-image: url(feuparallax2.jpg);
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+#mid{
+    height: 400px;
+    width: 100%;
+    background-color: #e8d1ae;
+    
+}
+
+/*Page Eau*/
+.img_eau{
+    width:100%;
+    border: 3px solid #C3DEE4 ;
+}
+
+/*Page Matériels et feu*/
+#kit{
+    width: 35%;
+    height: auto;
+}
+
+#sac{
+    width: 80%;
+    border-radius: 30%;
+    border:2px solid #000;
+}
+
+
+h2{
+    color:#000;
+    text-align:center;
+    font-size:2em;
+  }
+  .warpper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tab{
+    cursor: pointer;
+    padding:10px 20px;
+    margin:0px 2px;
+    background:#000;
+    display:inline-block;
+    color:#fff;
+    border-radius:3px 3px 0px 0px;
+    box-shadow: 0 0.5rem 0.8rem #00000080;
+  }
+  .panels{
+    background:#fffffff6;
+    box-shadow: 0 2rem 2rem #00000080;
+    min-height:200px;
+    width:100%;
+    max-width:500px;
+    border-radius:3px;
+    overflow:hidden;
+    padding:20px;  
+  }
+  .panel{
+    display:none;
+    animation: fadein .8s;
+  }
+  @keyframes fadein {
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+  }
+  .panel-title{
+    font-size:1.5em;
+    font-weight:bold
+  }
+  .radio{
+    display:none;
+  }
+  #one:checked ~ .panels #one-panel,
+  #two:checked ~ .panels #two-panel,
+  #three:checked ~ .panels #three-panel{
+    display:block
+  }
+  #one:checked ~ .tabs #one-tab,
+  #two:checked ~ .tabs #two-tab,
+  #three:checked ~ .tabs #three-tab{
+    background:#fffffff6;
+    color:#000;
+    border-top: 3px solid #000;
+  }
+
+/*Partie Feu*/
+.taille_img{
+    width: 50%;
+    justify-content: center;
+}

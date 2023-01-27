@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+            <!--Navbar-->
+        
+            <nav class="nav bg-light justify-content-center">
+                <a href="index.html" id="back" class="nav-link text-dark">Accueil</a>
+                <a href="campement.html"target="_blank" class="nav-link text-dark">Campement</a>
+                <a href="Feu.html"target="_blank" class="nav-link text-dark">Faire un feu</a>
+                <a href="Eau.html"target="_blank" class="nav-link text-dark">Filtrer l'eau</a>
+                <a href="Matériels.html"target="_blank" class="nav-link text-dark">Matériel</a>
+                <a href="Formulaire.html"target="_blank" class="nav-link text-dark">Formulaire/Contact</a>
+        </nav>
+
+
+  <!--Home-->
+
+  <section class="accueilF bg-dark d-flex w-100 h-50 flex-column justify-content-center align-items-center">
+    <h1 class="display-1 text-black text-center">Inscrit toi !</h1>
+    <p class="lead text-center text-black">Pour plus de conseils sur la survie</p>
+
+</section>
+
+    <!--Formulaire-->
+
+    <h2>Inscription</h2>
+
+    <div class="container" >
+<form>
+
+    <div class="col-md-4 col-sm-6 ">
+    
+<!--Coordonnées-->
+
+<div class="form-group">
+    <label for="exampleInputEmail1">E-Mail</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="monmail@gmail.com" >
+    <small id="emailHelp" class="form-text text-muted">Votre e-mail ne sera jamais divulguer</small>
+  </div>
+  
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Mot de passe</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+
+<div class="alert alert-danger" role="alert">
+    Pas de caractère spécifique 
+
+  </div>
+
+
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Validez</label>
+  </div>
+
+  <div class="form-group" >
+<label for="start"> Date de naissance :</label>
+        <input type="date" id="start" name="trip-start" value="2022-02-08"
+                 min="1918-01-01" max="2022-12-31">
+
+  </div>
+
+    <div class="form-group" >
+         <label for="commentaire"> Commentaires :</label><br>
+        <textarea  name="Comm" id="commentaire" rows="4" cols="48"></textarea>
+
+</div>
+
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+        <span class="badge bg-success">Success</span>
+
+      <!--Barre de progression-->
+        <h4> Information Complète :</h4>
+
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+          <!--Ligne d'erreur-->
+          <div class="alert" role="alert">
+            <a href="#emailHelp" class="alert-link"></a>
+           </div>
+
+
+           <!--Badge-->
+           <a href="Projet-Final.html" type="button" class="btn btn-info position-relative">
+            Accueil
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              32
+              <span class="visually-hidden">Visite sur le site</span>
+            </span></a>
+        
+  
+
+</div>
+</form>
+
+</div>
+
+         <!--Pagination-->
+
+    <nav class="marge" aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link" href="Matériels.html" tabindex="-1">Précédent</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="index.html" title="Accueil">1</a></li>
+        <li class="page-item"><a class="page-link" href="campement.html" title="Campement">2</a></li>
+        <li class="page-item"><a class="page-link" href="Feu.html" title="Le Feu">3</a></li>
+        <li class="page-item"><a class="page-link" href="Eau.html" title="L'Eau">4</a></li>
+        <li class="page-item"><a class="page-link" href="Matériels.html" title="Matériels">5</a></li>
+        <li class="page-item"><a class="page-link" href="Formulaire.html" title="Inscription" >6</a></li>
+
+        <li class="page-item disabled">
+          <a class="page-link " href="" tabindex="-1">Suivant</a>
+        </li>
+      </ul>
+    </nav>
+
+
+
+
+<!--Footer-->
+
+
+          <div class="container-">
+
+            <section class="marge">
+           
+            <footer class="text-center text-white" style="background-color: #1a4c15;">
+              <!-- Grid container -->
+              <div class="container p-4 pb-0">
+                
+                <section class="">
+                  <p class="d-flex justify-content-center align-items-center">
+                    <span class="me-3">Inscription gratuite</span>
+                    <a href="Formulaire.html"target="_blank" type="button" class="btn btn-outline-light btn-rounded">
+                      S'inscrire !</a>
+                  </p>
+
+
+                </section>
+                
+              </div>
+              
+              <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2022 Contenu utiliser :
+                <a class="text-white" href="https://www.survivalismepassion.com/">Survivalisme Passion /</a>
+                <a class="text-white" href="https://www.pexels.com/fr-fr/">Pexels /</a>
+                <a class="text-white" href="https://www.flaticon.com/fr/">Flaticon</a>
+                <a href="#back"><img src="fleches-vers-le-haut (1).png"></a>
+              </div>
+            </footer>
+           
+          </section>
+
+   
+
+          </div>
+          
+
+
+
+
+
+
+</body>
+</html>
+
